@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:not(input, textarea) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 434px;
+    padding: 50px 30px 0px 30px;
+    box-sizing: border-box;
+}
+
+.carousel .bannerShadowMain {
+    position: absolute;
+    top: 23px;
+    left: 46.5px;
+    width: 657px;
+    height: 409px;
+}
+
+.carousel .bannerShadowMain img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .swiper-container-banner {
+    position: relative;
+    width: 690px;
+    height: 300px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.carousel .swiper-container-banner .swiper-slide {
+    width: 485px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    transition: 700ms;
+}
+
+.carousel .swiper-container-banner .swiper-slide:not(.swiper-slide-active) .mark {
+    position: absolute;
+    width: 485px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 20%);
+}
+
+.carousel .swiper-container-banner .poster {
+    display: block;
+    width: 485px;
+    height: 300px;
+}
+
+.carousel .swiper-container-banner .swiper-slide:not(.swiper-slide-active) {
+    transform: scale(0.84);
+    z-index: -1;
+}
+
+.tab {
+    position: relative;
+    float: left;
+    margin-top: 64px;
+    width: 100%;
+    height: 65px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+.tab .swiper-container-tab {
+    position: relative;
+    width: 690px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tab .swiper-container-tab .swiper-slide {
+    width: auto;
+}
+
+.tab .swiper-container-tab .swiper-slide.focus .tabName {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 121, 8);
+}
+
+.tab .swiper-container-tab .swiper-slide .tabName {
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+    line-height: 47px;
+    color: rgb(51, 51, 51);
+    padding: 0 15px;
+}
+
+.tab .swiper-container-tab .swiper-slide .bar {
+    margin: 10px auto 0px;
+    display: none;
+}
+
+.tab .swiper-container-tab .swiper-slide.focus .bar {
+    display: block;
+}
+
+.tab .tabShadowLeft {
+    display: none;
+    position: absolute;
+    top: -3px;
+    left: 28px;
+    width: 84px;
+    height: 67px;
+    z-index: 2;
+}
+
+.tab .tabShadowLeftShown {
+    display: block;
+}
+
+.tab .tabShadowLeft img {
+    width: 100%;
+    height: 100%;
+}
+
+.tab .tabShadowRight {
+    display: none;
+    position: absolute;
+    top: -3px;
+    right: 28px;
+    width: 84px;
+    height: 67px;
+    z-index: 2;
+}
+
+.tab .tabShadowRightShown {
+    display: block;
+}
+
+.tab .tabShadowRight img {
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    position: relative;
+    float: left;
+    margin-top: 40px;
+    width: 100%;
+    padding: 0px 30px 156px 30px;
+    box-sizing: border-box;
+}
+
+.page .loading {
+    display: block;
+    width: 690px;
+    height: 552px;
+    padding: 80px 100px;
+    box-sizing: border-box;
+}
+
+.page .loading.hide {
+    display: none;
+}
+
+.page .loading img {
+    width: 100%;
+    height: 100%;
+}
+
+.page .swiper-container-page {
+    position: relative;
+    width: 690px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page .swiper-container-page .swiper-slide {
+    width: auto;
+}
+
+.page .pageList {
+    position: relative;
+    float: left;
+}
+
+.page .pageList div {
+    float: left;
+    width: 333px;
+    margin-right: 22px;
+}
+
+.page .pageList .poster {
+    display: block;
+    width: 333px;
+    height: 188px;
+    border-radius: 10px;
+}
+
+.page .pageList div:nth-child(even) {
+    margin-right: 0px;
+}
+
+.page .pageList div:nth-child(n + 3) {
+    margin-top: 40px;
+}
+
+.page .pageList .title {
+    margin-top: 24px;
+    font-size: 28px;
+    line-height: 30px;
+    color: rgb(17, 17, 17);
+    overflow: hidden;
+    white-space: nowrap;
+    /* 规定段落中的文本不进行换行 */
+    text-overflow: ellipsis;
+    /* 显示省略符号来代表被修剪的文本 */
+}
+
+.page .pageList .desc {
+    margin-top: 18px;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgb(102, 102, 102);
+    overflow: hidden;
+    white-space: nowrap;
+    /* 规定段落中的文本不进行换行 */
+    text-overflow: ellipsis;
+    /* 显示省略符号来代表被修剪的文本 */
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 116px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .normalImg {
+    display: block;
+}
+
+nav .activeImg {
+    display: none;
+}
+
+nav .title {
+    margin-top: 4px;
+    font-size: 20px;
+    line-height: 22px;
+    color: rgb(102, 102, 102);
+}
+
+nav .active .normalImg {
+    display: none;
+}
+
+nav .active .activeImg {
+    display: block;
+}
+
+nav .active .title {
+    margin-top: 4px;
+    font-size: 20px;
+    line-height: 22px;
+    color: #ff7a00;
+}

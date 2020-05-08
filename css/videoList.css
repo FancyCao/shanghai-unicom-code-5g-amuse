@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:not(input, textarea) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 0px 30px 156px 30px;
+    box-sizing: border-box;
+}
+
+.video .videoList {
+    position: relative;
+    margin-top: 40px;
+}
+
+.video .videoList div {
+    float: left;
+    width: 333px;
+    margin-right: 22px;
+}
+
+.video .videoList .poster {
+    display: block;
+    width: 333px;
+    height: 188px;
+    border-radius: 10px;
+}
+
+.video .videoList div:nth-child(even) {
+    margin-right: 0px;
+}
+
+.video .videoList div:nth-child(n + 3) {
+    margin-top: 40px;
+}
+
+.video .videoList .title {
+    margin-top: 24px;
+    font-size: 28px;
+    line-height: 30px;
+    color: rgb(17, 17, 17);
+    overflow: hidden;
+    white-space: nowrap;
+    /* 规定段落中的文本不进行换行 */
+    text-overflow: ellipsis;
+    /* 显示省略符号来代表被修剪的文本 */
+}
+
+.video .videoList .desc {
+    margin-top: 18px;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgb(102, 102, 102);
+    overflow: hidden;
+    white-space: nowrap;
+    /* 规定段落中的文本不进行换行 */
+    text-overflow: ellipsis;
+    /* 显示省略符号来代表被修剪的文本 */
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 116px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .normalImg {
+    display: block;
+}
+
+nav .activeImg {
+    display: none;
+}
+
+nav .title {
+    margin-top: 4px;
+    font-size: 20px;
+    line-height: 22px;
+    color: rgb(102, 102, 102);
+}
+
+nav .active .normalImg {
+    display: none;
+}
+
+nav .active .activeImg {
+    display: block;
+}
+
+nav .active .title {
+    margin-top: 4px;
+    font-size: 20px;
+    line-height: 22px;
+    color: #ff7a00;
+}

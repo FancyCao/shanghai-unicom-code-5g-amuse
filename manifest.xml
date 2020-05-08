@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TemplatePackage author="" desc="" label="">
+    <template name="index" type="index" desc="首页" template_path="index.jsp" preview_path="">
+	    
+	</template>
+  </TemplatePackage>
